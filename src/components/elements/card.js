@@ -329,10 +329,7 @@ const SvgWrapper = styled.div`
         }
     }
 `
-<<<<<<< HEAD
-=======
 
->>>>>>> 5d4b3f26bdb61f24ed9cadf3bea9d145e514a93f
 export const NavCard = ({
     icon: Icon,
     title,
@@ -431,12 +428,6 @@ const IconRightWrapper = styled.div`
 `
 
 const RelativeFlex = styled(Flex)`
-    & > div > svg {
-        height: 24px;
-        width: 24px;
-        margin-right: 1.6rem;
-    }
-
     position: relative;
 `
 
@@ -457,15 +448,9 @@ export const CardLink = ({ icon: Icon, title, to, style, external, target, onCli
             <HoverFlex p="1rem 1.6rem" jc="flex-start" direction="row" tablet_direction="row">
                 <RelativeFlex ai="center" jc="flex-start">
                     {Icon && (
-<<<<<<< HEAD
-                        <div>
-                            <Icon />
-                        </div>
-=======
                         <IconRightWrapper>
                             <Icon />
                         </IconRightWrapper>
->>>>>>> 5d4b3f26bdb61f24ed9cadf3bea9d145e514a93f
                     )}
                     <ResponsiveHeader
                         color="black-3"

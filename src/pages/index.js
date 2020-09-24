@@ -1,12 +1,6 @@
 import React from 'react'
 import Loadable from '@loadable/component'
 // import Ticker from './home/_ticker'
-<<<<<<< HEAD
-import { Hero } from './home/_hero'
-import TradeTypes from './home/_trade-types'
-import TradeTypesMobile from './home/_trade-types-mobile'
-=======
->>>>>>> 5d4b3f26bdb61f24ed9cadf3bea9d145e514a93f
 import Markets from './home/_markets'
 import WhatOurClientsSay from './home/_what-our-clients-say'
 import TradeTypes from './home/_trade-types'
@@ -58,33 +52,19 @@ const Home = () => {
             />
             <Hero />
 
-<<<<<<< HEAD
-            <Show.Mobile>
-=======
             <Show.Mobile min_width="992">
->>>>>>> 5d4b3f26bdb61f24ed9cadf3bea9d145e514a93f
                 <TradeTheWayYouLike />
             </Show.Mobile>
             <Show.Desktop max_width="991">
                 <Trade />
             </Show.Desktop>
 
-<<<<<<< HEAD
-            <Show.Desktop max_width="599">
-                <TradeTypes />
-            </Show.Desktop>
-            <Show.Mobile min_width="600">
-                <TradeTypesMobile />
-            </Show.Mobile>
-
-=======
             <Show.Desktop max_width="851">
                 <TradeTypes />
             </Show.Desktop>
             <Show.Mobile min_width="852">
                 <TradeTypesMobile />
             </Show.Mobile>
->>>>>>> 5d4b3f26bdb61f24ed9cadf3bea9d145e514a93f
             <Markets />
             <SimpleSteps
                 content={simple_step_content}

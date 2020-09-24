@@ -144,15 +144,9 @@ const DBanner = ({ title, data, background_pattern }) => {
 }
 
 DBanner.propTypes = {
-<<<<<<< HEAD
-    background_pattern: PropTypes.object,
-    data: PropTypes.object.isRequired,
-    title: PropTypes.string,
-=======
     background_pattern: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
     data: PropTypes.object.isRequired,
     title: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
->>>>>>> 5d4b3f26bdb61f24ed9cadf3bea9d145e514a93f
 }
 
 export default DBanner
