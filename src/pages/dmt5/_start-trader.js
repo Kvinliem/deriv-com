@@ -115,6 +115,7 @@ const TabItem = styled.div`
                       font-weight: unset;
                   }
               `}
+<<<<<<< HEAD
 
     @media ${device.mobileL} {
         padding: 24px 24px;
@@ -122,6 +123,17 @@ const TabItem = styled.div`
         :last-child{
             padding: 12px 24px;
         }
+=======
+    
+    @media ${device.tabletS} {
+        padding: 17px 20px;
+    }
+    @media ${device.mobileL} {
+        max-width: 164px;
+        width: 100%;
+        padding: ${(props) => props.mobile_padding};
+
+>>>>>>> 5d4b3f26bdb61f24ed9cadf3bea9d145e514a93f
     }
 `
 const StyledHeader = styled(Header)`
@@ -169,12 +181,28 @@ const StartTrader = () => {
                 {localize('How to get started with a DMT5 account')}
             </StyledHeader>
             <Flex mb="8rem" p="0 16px" tablet={{ mb: '32px', height: 'unset' }}>
+<<<<<<< HEAD
                 <TabItem active={tab === 'Demo'} onClick={() => onTabClick('Demo')}>
+=======
+                <TabItem
+                    mobile_padding="21px 12px"
+                    active={tab === 'Demo'}
+                    onClick={() => onTabClick('Demo')}
+                >
+>>>>>>> 5d4b3f26bdb61f24ed9cadf3bea9d145e514a93f
                     <StyledText size="var(--text-size-m)" align="center">
                         {localize('Demo account')}
                     </StyledText>
                 </TabItem>
+<<<<<<< HEAD
                 <TabItem active={tab === 'Real'} onClick={() => onTabClick('Real')}>
+=======
+                <TabItem
+                    mobile_padding="12px 24px"
+                    active={tab === 'Real'}
+                    onClick={() => onTabClick('Real')}
+                >
+>>>>>>> 5d4b3f26bdb61f24ed9cadf3bea9d145e514a93f
                     <StyledText size="var(--text-size-m)" align="center">
                         {localize('Real money account')}
                     </StyledText>
@@ -183,7 +211,11 @@ const StartTrader = () => {
 
             <Flex max_width="1200px">
                 {tab === 'Demo' ? (
+<<<<<<< HEAD
                     <SideTab>
+=======
+                    <SideTab parent_tab={tab}>
+>>>>>>> 5d4b3f26bdb61f24ed9cadf3bea9d145e514a93f
                         <SideTab.Panel
                             label=""
                             description={
@@ -193,6 +225,10 @@ const StartTrader = () => {
                                 />
                             }
                             item_width="24rem"
+<<<<<<< HEAD
+=======
+                            mobile_item_width="36rem"
+>>>>>>> 5d4b3f26bdb61f24ed9cadf3bea9d145e514a93f
                         >
                             <ImageWrapper>
                                 <QueryImage
@@ -230,14 +266,26 @@ const StartTrader = () => {
                         </SideTab.Panel>
                     </SideTab>
                 ) : (
+<<<<<<< HEAD
                     <SideTab>
+=======
+                    <SideTab parent_tab={tab}>
+>>>>>>> 5d4b3f26bdb61f24ed9cadf3bea9d145e514a93f
                         <SideTab.Panel
                             label=""
                             description={
                                 <Localize
                                     translate_text="Create or <0>sign in</0> to your Deriv account"
                                     components={[
+<<<<<<< HEAD
                                         <StyledLocalizedLink external key={0} to={handleLogin()} />,
+=======
+                                        <StyledLocalizedLink
+                                            external="true"
+                                            key={0}
+                                            to={handleLogin()}
+                                        />,
+>>>>>>> 5d4b3f26bdb61f24ed9cadf3bea9d145e514a93f
                                     ]}
                                 />
                             }

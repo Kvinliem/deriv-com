@@ -266,7 +266,11 @@ const DHero = ({
                         </StyledLinkButton>
                     )}
                     {go_to_live_demo && (
+<<<<<<< HEAD
                         <StyledLinkButton external secondary="true" to={redirectUrl()}>
+=======
+                        <StyledLinkButton external="true" secondary="true" to={redirectUrl()}>
+>>>>>>> 5d4b3f26bdb61f24ed9cadf3bea9d145e514a93f
                             {localize('Go to live demo')}
                         </StyledLinkButton>
                     )}

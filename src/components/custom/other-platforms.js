@@ -35,6 +35,10 @@ import Career from 'components/svgs/careers'
 import Help from 'components/svgs/help-centre'
 import Community from 'components/svgs/community'
 import Payment from 'components/svgs/payment-methods'
+<<<<<<< HEAD
+=======
+import RegulatoryInfo from 'components/svgs/regulatory-info'
+>>>>>>> 5d4b3f26bdb61f24ed9cadf3bea9d145e514a93f
 
 const MarginDivider = styled(Divider)`
     margin: 0 0.8rem;
@@ -164,7 +168,9 @@ export const SmarttraderCard = ({ is_selected, word_break_cover }) => (
                 <Localize
                     key={0}
                     translate_text="Trade the world’s markets on <0>Binary.com</0>’s classic platform."
-                    components={[<LocalizedLinkText key={0} to="home" external is_binary_link />]}
+                    components={[
+                        <LocalizedLinkText key={0} to="home" external="true" is_binary_link />,
+                    ]}
                 />,
             ]}
             is_inline_icon
@@ -360,10 +366,17 @@ export const NavCompany = ({ onClick }) => (
             to="/about/#leadership"
         />
         <CardLink
+<<<<<<< HEAD
             icon={() => <Partner dynamic_id="partner-desktop" />}
             title={localize('Partnership programmes')}
             onClick={onClick}
             to="/partners/"
+=======
+            icon={() => <RegulatoryInfo dynamic_id="regulatory-information" />}
+            title={localize('Regulatory information')}
+            onClick={onClick}
+            to="/regulatory/"
+>>>>>>> 5d4b3f26bdb61f24ed9cadf3bea9d145e514a93f
         />
         <CardLink
             icon={() => <Choose dynamic_id="choose-desktop" />}
@@ -372,6 +385,16 @@ export const NavCompany = ({ onClick }) => (
             to="/why-choose-us/"
         />
         <CardLink
+<<<<<<< HEAD
+=======
+            icon={() => <Partner dynamic_id="partner-desktop" />}
+            title={localize('Partnership programmes')}
+            onClick={onClick}
+            to="/partners/"
+        />
+
+        <CardLink
+>>>>>>> 5d4b3f26bdb61f24ed9cadf3bea9d145e514a93f
             icon={() => <Contact dynamic_id="contact-desktop" />}
             title={localize('Contact us')}
             onClick={onClick}
@@ -382,7 +405,11 @@ export const NavCompany = ({ onClick }) => (
             title={localize('Careers')}
             onClick={onClick}
             to="/careers/"
+<<<<<<< HEAD
             external
+=======
+            external="true"
+>>>>>>> 5d4b3f26bdb61f24ed9cadf3bea9d145e514a93f
         />
     </Flex>
 )
@@ -405,7 +432,11 @@ export const NavResources = ({ onClick }) => (
             onClick={onClick}
             to={community_url}
             target="_blank"
+<<<<<<< HEAD
             external
+=======
+            external="true"
+>>>>>>> 5d4b3f26bdb61f24ed9cadf3bea9d145e514a93f
         />
         <CardLink
             icon={() => <Payment dynamic_id="payment-desktop" />}
